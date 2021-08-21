@@ -21,9 +21,7 @@ function QuestionForm(props) {
     event.preventDefault();
     fetch(`http://localhost:4000/questions`, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         prompt: formData.prompt,
         answers: [
@@ -32,9 +30,10 @@ function QuestionForm(props) {
           formData.answer3,
           formData.answer4,
         ],
-        correctIndex:formData.correctIndex
+        correctIndex: parseInt(formData.correctIndex),
       }),
-    });
+    })
+      
 
     console.log(formData);
   }
@@ -108,5 +107,4 @@ function QuestionForm(props) {
     </section>
   );
 }
-
 export default QuestionForm;

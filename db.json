@@ -9,7 +9,7 @@
         "props",
         "state"
       ],
-      "correctIndex": 3
+      "correctIndex": 1
     },
     {
       "id": 3,
@@ -56,180 +56,26 @@
       "correctIndex": 1
     },
     {
-      "prompt": "What special prop should always be included for lists of elements?",
+      "prompt": "Lara",
       "answers": [
-        "Id",
-        "Key",
-        "Name",
-        "Prop"
+        "q",
+        "d",
+        "f",
+        "j"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "id": 7
     },
     {
-      "prompt": "What special prop should always be included for lists of elements?",
+      "prompt": "j",
       "answers": [
-        "Id",
-        "Key",
-        "Name",
-        "Prop"
+        "c",
+        "t",
+        "p",
+        "fcf"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "id": 8
-    },
-    {
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "Id",
-        "Key",
-        "Name",
-        "Prop"
-      ],
-      "correctIndex": 1,
-      "id": 9
-    },
-    {
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "Id",
-        "Key",
-        "Name",
-        "Prop"
-      ],
-      "correctIndex": 1,
-      "id": 10
-    },
-    {
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "Id",
-        "Key",
-        "Name",
-        "Prop"
-      ],
-      "correctIndex": 1,
-      "id": 11
-    },
-    {
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "Id",
-        "Key",
-        "Name",
-        "Prop"
-      ],
-      "correctIndex": 1,
-      "id": 12
-    },
-    {
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "Id",
-        "Key",
-        "Name",
-        "Prop"
-      ],
-      "correctIndex": 1,
-      "id": 13
-    },
-    {
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "Id",
-        "Key",
-        "Name",
-        "Prop"
-      ],
-      "correctIndex": 1,
-      "id": 14
-    },
-    {
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "Id",
-        "Key",
-        "Name",
-        "Prop"
-      ],
-      "correctIndex": 1,
-      "id": 15
-    },
-    {
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "Id",
-        "Key",
-        "Name",
-        "Prop"
-      ],
-      "correctIndex": 1,
-      "id": 16
-    },
-    {
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "Id",
-        "Key",
-        "Name",
-        "Prop"
-      ],
-      "correctIndex": 1,
-      "id": 17
-    },
-    {
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "Id",
-        "Key",
-        "Name",
-        "Prop"
-      ],
-      "correctIndex": 1,
-      "id": 18
-    },
-    {
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "Id",
-        "Key",
-        "Name",
-        "Prop"
-      ],
-      "correctIndex": 1,
-      "id": 19
-    },
-    {
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "Id",
-        "Key",
-        "Name",
-        "Prop"
-      ],
-      "correctIndex": 1,
-      "id": 20
-    },
-    {
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "Id",
-        "Key",
-        "Name",
-        "Prop"
-      ],
-      "correctIndex": 1,
-      "id": 21
-    },
-    {
-      "prompt": "Lara",
-      "answers": [
-        "kkk",
-        "jjjj",
-        "kkk",
-        "kkk"
-      ],
-      "correctIndex": "1",
-      "id": 22
     }
   ]
 }
