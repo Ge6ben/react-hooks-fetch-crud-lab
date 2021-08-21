@@ -11,10 +11,11 @@ function QuestionItem({ question, deleteQuestion, handleChangeAnswer }) {
 
   function handleDeleteQuestion() {
     deleteQuestion(id);
+
   } 
   function changeAnswer(e) {
     handleChangeAnswer(id, parseInt(e.target.value))
-    console.log(parseInt(e.target.value))
+    
 }
   return (
     <li>
