@@ -12,7 +12,7 @@ function QuestionItem({ question, deleteQuestion ,onChangeCorrectAnswer }) {
     deleteQuestion(id);
   }
   function changeAnswer(e) {
-    onChangeCorrectAnswer(id , e.target.value )
+    onChangeCorrectAnswer(id , parseInt(e.target.value) )
   }
 
   return (

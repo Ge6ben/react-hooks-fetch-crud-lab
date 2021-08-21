@@ -12,7 +12,7 @@ function QuestionList() {
 
   function deleteQuestion(id) {
     fetch(`http://localhost:4000/questions/${id}`, {
-      method:'DELETE'
+      method: "DELETE",
     })
       .then((res) => res.json())
       .then(() => {
@@ -20,23 +20,25 @@ function QuestionList() {
         setQuestions(afterDelete);
       });
   }
-  function onChangeCorrectAnswer(id,correctIndex) {
+  function onChangeCorrectAnswer(id, correctIndex) {
+  
+
     fetch(`http://localhost:4000/questions/${id}`, {
       method: "PATCH",
-      Headers: { "Content-Type": "application/json" },
-
-      Body: JSON.stringify({correctIndex}),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ correctIndex }),
     })
-
-    .then((res) => res.json())
+      .then((res) => res.json())
       .then((data) => {
-        const updateQuestion = questions.map((question) => {
-          if (question.id === data.id) return data
-          return question;
-        })
-      
-        setQuestions(updateQuestion)
-      })
+        const updateQuestions = questions.map((q) => {
+          if (q.id === id) return data;
+          return q;
+        });
+
+        setQuestions(updateQuestions);
+      });
   }
   console.log(questions);
   return (
