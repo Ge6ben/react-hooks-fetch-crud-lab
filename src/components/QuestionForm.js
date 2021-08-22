@@ -21,7 +21,7 @@ function QuestionForm(props) {
     event.preventDefault();
     fetch("http://localhost:4000/questions", {
       method: "POST",
-      header: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         prompt: formData.prompt,
         answers: [

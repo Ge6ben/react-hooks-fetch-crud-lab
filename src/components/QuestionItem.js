@@ -1,6 +1,6 @@
 import React from "react";
 
-function QuestionItem({ question, deleteQuestion, handleChangeAnswer }) {
+function QuestionItem({ question, onDeleteClick, handleChangeAnswer }) {
   const { id, prompt, answers, correctIndex } = question;
 
   const options = answers.map((answer, index) => (
@@ -10,7 +10,7 @@ function QuestionItem({ question, deleteQuestion, handleChangeAnswer }) {
   ));
 
   function handleDeleteQuestion() {
-    deleteQuestion(id);
+    onDeleteClick(id);
 
   } 
   function changeAnswer(e) {

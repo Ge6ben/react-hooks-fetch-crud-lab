@@ -10,18 +10,20 @@ function QuestionList() {
       .then((data) => setQuestions(data));
   }, []);
 
-  function deleteQuestion(id) {
+  function handleDeleteClick(id) {
     fetch(`http://localhost:4000/questions/${id}`, {
-      method: "DELETE",
+      method: "DELETE"
     })
       .then((r) => r.json())
-      .then(setQuestions(questions.filter((q) => q.id !== id)));
-  }
+      .then(() => {
+        const updatedQuestions = questions.filter((q) => q.id !== id);
+        setQuestions(updatedQuestions);
+      }); }
 
   function handleChangeAnswer(id, correctIndex) {
     fetch(`http://localhost:4000/questions/${id}`, {
       method: "PATCH",
-      header: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         correctIndex,
       }),
@@ -48,7 +50,7 @@ function QuestionList() {
             key={question.id}
             handleChangeAnswer={handleChangeAnswer}
             question={question}
-            deleteQuestion={deleteQuestion}
+            onDeleteClick={handleDeleteClick}
           />
         ))}
       </ul>
